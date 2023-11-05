@@ -10,5 +10,5 @@ Brush up on your morse code skills by exterminating horizontally-spinning rats i
 |Key|Action|
 |---|---|
 |<kbd>WASD</kbd>| Switch target |
-|<kbd>i</kbd>| Dit (short burst) |
-|<kbd>j</kbd>| Dah (long tone) |
+|<kbd>j</kbd>| Dit (short burst) |
+|<kbd>k</kbd>| Dah (long tone) |
