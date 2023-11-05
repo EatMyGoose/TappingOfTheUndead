@@ -4,7 +4,7 @@ Brush up on your morse code skills by exterminating horizontally-spinning rats i
 
 ![preview](docs/gameplay_preview.gif "Gameplay")
 
-<a href="https://eatmygoose.github.io/TappingOfTheUndead/index.html"><h3>Check it out here<h3></a>
+[Check it out here!](https://eatmygoose.github.io/TappingOfTheUndead/index.html)
 
 ## Controls
 |Key|Action|
