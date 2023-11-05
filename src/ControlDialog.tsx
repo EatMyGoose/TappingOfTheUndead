@@ -59,8 +59,8 @@ export function ControlDialog(props: {onClose:()=>void})
                 <div className="container">
                     <ul>
                         <li><kbd>WASD</kbd> - Switch target</li>
-                        <li><kbd>i</kbd> - Dit (short burst)</li>
-                        <li><kbd>j</kbd> - Dah (long tone)</li>
+                        <li><kbd>j</kbd> - Dit (short burst)</li>
+                        <li><kbd>k</kbd> - Dah (long tone)</li>
                     </ul>
                 </div>
                 
