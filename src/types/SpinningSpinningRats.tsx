@@ -61,7 +61,7 @@ export function SpinningSpinningRats()
             <RatRing 
                 ratsPerRing={10}
                 msPerRevolution={100000}
-                framerate={8}
+                framerate={9}
                 ratSize={0.5}
                 radius={0.75}
                 key={-1}
