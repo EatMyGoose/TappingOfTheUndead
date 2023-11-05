@@ -1,0 +1,1 @@
+export const VIEWPORT_WIDTH: number = 1.2 as const;
