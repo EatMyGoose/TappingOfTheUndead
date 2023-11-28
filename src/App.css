@@ -1,4 +1,35 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
 .main-canvas{
   width: 100%;
-  height: 85vh;
+  height: 100%;
+}
+
+.flex-vertical-fill{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.child-fill-vertical{
+  height: 100%;
+}
+
+@media only screen and (max-width:576px){
+  .canvas-full-width-xs{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }

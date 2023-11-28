@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://eatmygoose.github.io/TappingOfTheUndead/static/css/main.8028e6e2.css",
-    "main.js": "https://eatmygoose.github.io/TappingOfTheUndead/static/js/main.6fb3c464.js",
+    "main.css": "https://eatmygoose.github.io/TappingOfTheUndead/static/css/main.c9f75e59.css",
+    "main.js": "https://eatmygoose.github.io/TappingOfTheUndead/static/js/main.4131cbbf.js",
     "static/js/787.8b8b0915.chunk.js": "https://eatmygoose.github.io/TappingOfTheUndead/static/js/787.8b8b0915.chunk.js",
     "index.html": "https://eatmygoose.github.io/TappingOfTheUndead/index.html",
-    "main.8028e6e2.css.map": "https://eatmygoose.github.io/TappingOfTheUndead/static/css/main.8028e6e2.css.map",
-    "main.6fb3c464.js.map": "https://eatmygoose.github.io/TappingOfTheUndead/static/js/main.6fb3c464.js.map",
+    "main.c9f75e59.css.map": "https://eatmygoose.github.io/TappingOfTheUndead/static/css/main.c9f75e59.css.map",
+    "main.4131cbbf.js.map": "https://eatmygoose.github.io/TappingOfTheUndead/static/js/main.4131cbbf.js.map",
     "787.8b8b0915.chunk.js.map": "https://eatmygoose.github.io/TappingOfTheUndead/static/js/787.8b8b0915.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8028e6e2.css",
-    "static/js/main.6fb3c464.js"
+    "static/css/main.c9f75e59.css",
+    "static/js/main.4131cbbf.js"
   ]
 }

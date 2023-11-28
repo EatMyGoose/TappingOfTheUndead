@@ -1,0 +1,16 @@
+.hide-xs{
+}
+
+.show-xs{
+    display: none;
+}
+
+@media only screen and (max-width:576px){
+    .hide-xs{
+        display: none;
+    }
+
+    .show-xs{
+        display: unset;
+    }
+}

@@ -16,7 +16,8 @@ export function AppHeader()
                 <nav className="container" >
                     <ul>
                         <li>
-                            <h2>Tapping of the Undead</h2>
+                            <h2 className="hide-xs">Tapping of the Undead</h2>
+                            <h3 className="show-xs">Tapping of the Undead</h3>
                         </li>
                     </ul>
                     <ul>

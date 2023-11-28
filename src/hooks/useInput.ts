@@ -1,11 +1,17 @@
 import React from 'react';
 import { IUserInputs, get_initial_inputs } from '../types/IUserInputs';
 
+export interface IUseInput
+{
+    inputs: IUserInputs,
+    setKeyState: (char: string, newState:boolean) => void;
+}
+
 export function useInput()
 {
     const inputs = React.useRef<IUserInputs>(get_initial_inputs());
 
-    function HandleKeyAction(character: string, newState: boolean)
+    const HandleKeyAction = (character: string, newState: boolean) => 
     {
   
       switch(character)
@@ -36,7 +42,7 @@ export function useInput()
             break;
         }
       }
-    }
+    };
 
     React.useEffect(
         () => {
@@ -52,5 +58,8 @@ export function useInput()
         }, []
     );
 
-    return inputs;
+    return {
+      inputs,
+      setKeyState: HandleKeyAction
+    };
 }

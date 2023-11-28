@@ -1,18 +1,20 @@
 import React from 'react';
 import './App.css';
+import './util.css'
 import "@picocss/pico"
 import { AppHeader } from './AppHeader';
 import { Stage, Layer, Group } from 'react-konva';
 import { GetWorld2ClientXForm } from './util/matrix';
 import { useGameLoop } from './hooks/useGameLoop';
 import { useInput } from './hooks/useInput';
+import { AppFooter } from './AppFooter';
 
 
 function App() {
-  const inputs = useInput();
+  const {inputs, setKeyState} = useInput();
   const gameState = useGameLoop(inputs.current);
 
-  const parentRef = React.useRef<HTMLElement | null>(null);
+  const parentRef = React.useRef<HTMLDivElement | null>(null);
 
   const [width, height] = (
     parentRef.current? 
@@ -41,18 +43,25 @@ function App() {
     </>
   )
   return (
-    <div>
+    <div className='flex-vertical-fill'>
       <AppHeader/>
 
-      <article style={{padding:10}}>
-        <main className="container" ref={parentRef}>
-        <Stage className='main-canvas' width={width} height={height} style={{backgroundColor:"rgba(255,255,255,0.9"}}>
-          <Layer>
-            {canvas}
-          </Layer>
-        </Stage>
-        </main>
+      <article className="child-fill-vertical canvas-full-width-xs" style={{padding:10}}>
+        <div className="container child-fill-vertical canvas-full-width-xs" >
+          <div className="child-fill-vertical" ref={parentRef}>
+          <Stage className='main-canvas' width={width} height={height} style={{backgroundColor:"rgba(255,255,255,0.9"}}>
+            <Layer>
+              {canvas}
+            </Layer>
+          </Stage>
+          </div>
+        </div>
       </article>
+
+      <AppFooter
+        onDotInput={(pressed) => setKeyState("j", pressed)}
+        onDashInput={(pressed) => setKeyState("k", pressed)}
+      />
     </div>
   );
 }
